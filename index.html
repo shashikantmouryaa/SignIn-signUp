@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="signIn" class="signdiv active">
+        <div class="Container">
+            <form id="myForm" action="">
+                <h1>Sign in</h1>
+                <div class="loginSubContainer">
+                    <div class="input-group">
+                        <input required="" type="text" name="username" autocomplete="off" class="input">
+                        <label class="user-label">Username</label>
+                    </div>
+                    <div class="input-group">
+                        <input required="" type="password" name="password" autocomplete="off" class="input">
+                        <label class="user-label">Password</label>
+                    </div>
+                    <button onclick="signin()">Sign in</button>
+                </div>
+            </form>
+        </div>
+        <div class="Container">
+            <h2>Hello, Friend!</h2>
+            <p>Enter Your Personal Details <br> And Start Journey With Us</p>
+            <button onclick="showsignup()">Sign Up</button>
+        </div>
+    </div>
+    <div id="signUp" class="signdiv">
+        <div class="Container">
+            <h2>Welcome, Back!</h2>
+            <p>To Keep Connected With Us <br> Please Login With Your Personal Info</p>
+            <button onclick="showsignin()">Sign In</button>
+        </div>
+        <div class="Container">
+            <form action="">
+                <h1>Sign Up</h1>
+                <div class="signupSubContainer">
+                    <div class="input-group">
+                        <input required="" type="text" name="name" autocomplete="off" class="input">
+                        <label class="user-label">Full Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input required="" type="email" name="email" autocomplete="off" class="input">
+                        <label class="user-label">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input required="" type="password" name="password" autocomplete="off" class="input">
+                        <label class="user-label">Password</label>
+                    </div>
+                    <button onclick="signup()">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/main.js"></script>
+</body>
+
+</html>
