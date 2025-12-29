@@ -152,7 +152,7 @@ input:valid {
 }
 
 .input:focus~label,
-input:valid~label {
+.input:valid ~ .user-label {
     transform: translateY(-50%) scale(0.8);
     background-color: #212121;
     padding: 0 .4em;
@@ -170,4 +170,5 @@ input:valid~label {
     .signdiv::after {
         display: none;
     }
+
 }
