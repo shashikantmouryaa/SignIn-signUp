@@ -12,6 +12,23 @@ function showsignin() {
 }
 
 function signin(){
-    
-    document.getElementById("myForm").submit();
+    document.getElementById("SingInform").submit();
 }
+
+function signUP(){
+    document.getElementById("SingUpform").submit();
+}
+
+
+function togglePassword(id, icon) {
+    const input = document.getElementById(id);
+
+    if (input.type === "password") {
+        input.type = "text";
+        icon.classList.replace("fa-eye", "fa-eye-slash");
+    } else {
+        input.type = "password";
+        icon.classList.replace("fa-eye-slash", "fa-eye");
+    }
+}
+
